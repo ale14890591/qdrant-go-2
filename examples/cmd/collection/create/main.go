@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	qdrantgo "github.com/henomis/qdrant-go"
-	"github.com/henomis/qdrant-go/request"
-	"github.com/henomis/qdrant-go/response"
+	qdrantgo "github.com/ale14890591/qdrant-go-2"
+	"github.com/ale14890591/qdrant-go-2/request"
+	"github.com/ale14890591/qdrant-go-2/response"
 )
 
 func main() {

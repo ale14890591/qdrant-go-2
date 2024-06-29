@@ -1,6 +1,6 @@
 # Unofficial Go client for Qdrant vector search engine
 
-[![GoDoc](https://godoc.org/github.com/henomis/qdrant-go?status.svg)](https://godoc.org/github.com/henomis/qdrant-go) [![Go Report Card](https://goreportcard.com/badge/github.com/henomis/qdrant-go)](https://goreportcard.com/report/github.com/henomis/qdrant-go) [![GitHub release](https://img.shields.io/github/release/henomis/qdrant-go.svg)](https://github.com/henomis/qdrant-go/releases)
+[![GoDoc](https://godoc.org/github.com/ale14890591/qdrant-go-2?status.svg)](https://godoc.org/github.com/ale14890591/qdrant-go-2) [![Go Report Card](https://goreportcard.com/badge/github.com/ale14890591/qdrant-go-2)](https://goreportcard.com/report/github.com/ale14890591/qdrant-go-2) [![GitHub release](https://img.shields.io/github/release/henomis/qdrant-go.svg)](https://github.com/ale14890591/qdrant-go-2/releases)
 
 This is [Qdrant](https://qdrant.tech/)'s **unofficial** Go client, designed to enable you to use Qdrant's services easily from your own applications.
 
@@ -85,7 +85,7 @@ This is [Qdrant](https://qdrant.tech/)'s **unofficial** Go client, designed to e
 You can load qdrant-go into your project by using:
 
 ```
-go get github.com/henomis/qdrant-go
+go get github.com/ale14890591/qdrant-go-2
 ```
 
 ### Run Qdrant
@@ -122,9 +122,9 @@ import (
 	"context"
 	"fmt"
 
-	qdrantgo "github.com/henomis/qdrant-go"
-	"github.com/henomis/qdrant-go/request"
-	"github.com/henomis/qdrant-go/response"
+	qdrantgo "github.com/ale14890591/qdrant-go-2"
+	"github.com/ale14890591/qdrant-go-2/request"
+	"github.com/ale14890591/qdrant-go-2/response"
 )
 
 func main() {

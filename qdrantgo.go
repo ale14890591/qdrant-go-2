@@ -6,8 +6,8 @@ import (
 
 	"github.com/henomis/restclientgo"
 
-	"github.com/henomis/qdrant-go/request"
-	"github.com/henomis/qdrant-go/response"
+	"github.com/ale14890591/qdrant-go-2/request"
+	"github.com/ale14890591/qdrant-go-2/response"
 )
 
 type Client struct {
