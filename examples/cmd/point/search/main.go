@@ -19,7 +19,7 @@ func main() {
 		context.Background(),
 		&request.PointsSearch{
 			CollectionName: "test",
-			Vector:         []float64{1.1, 2.2, 3.3, 4.4},
+			Vector:         []float32{1.1, 2.2, 3.3, 4.4},
 			Limit:          10,
 			WithPayload:    &withPayload,
 			WithVector:     &withPayload,
