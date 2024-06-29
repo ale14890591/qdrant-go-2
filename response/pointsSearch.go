@@ -3,26 +3,28 @@ package response
 import (
 	"encoding/json"
 	"io"
+
+	"golang.org/x/exp/constraints"
 )
 
-type PointsSearch struct {
+type PointsSearch[T string | constraints.Integer] struct {
 	Response
-	Result []PointsSearchResult `json:"result"`
+	Result []PointsSearchResult[T] `json:"result"`
 }
 
-type PointsSearchResult struct {
-	ID      string                 `json:"id"`
+type PointsSearchResult[T string | constraints.Integer] struct {
+	ID      T                      `json:"id"`
 	Version uint64                 `json:"version"`
 	Score   float64                `json:"score"`
 	Payload map[string]interface{} `json:"payload,omitempty"`
 	Vector  []float32              `json:"vector,omitempty"`
 }
 
-func (p *PointsSearch) AcceptContentType() string {
+func (p *PointsSearch[T]) AcceptContentType() string {
 	return "application/json"
 }
 
-func (p *PointsSearch) Decode(body io.Reader) error {
+func (p *PointsSearch[T]) Decode(body io.Reader) error {
 	err := json.NewDecoder(body).Decode(p)
 	if err != nil {
 		return err

@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/henomis/restclientgo"
+	"golang.org/x/exp/constraints"
 
 	"github.com/ale14890591/qdrant-go-2/request"
 	"github.com/ale14890591/qdrant-go-2/response"
@@ -97,10 +98,11 @@ func (c *Client) PointsUpsert(
 	return c.restClient.Put(ctx, req, res)
 }
 
-func (c *Client) PointsSearch(
+func PointsSearch[T string | constraints.Integer](
 	ctx context.Context,
+	c *Client,
 	req *request.PointsSearch,
-	res *response.PointsSearch,
+	res *response.PointsSearch[T],
 ) error {
 	return c.restClient.Post(ctx, req, res)
 }

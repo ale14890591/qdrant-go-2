@@ -1,2 +1,4 @@
 github.com/henomis/restclientgo v1.1.0 h1:qNhBpTwYXuwfy6SL2EWjbfTrlUw70PZYmqQ4jewdu5E=
 github.com/henomis/restclientgo v1.1.0/go.mod h1:xIeTCu2ZstvRn0fCukNpzXLN3m/kRTU0i0RwAbv7Zug=
+golang.org/x/exp v0.0.0-20240613232115-7f521ea00fb8 h1:yixxcjnhBmY0nkL253HFVIm0JsFHwrHdT3Yh6szTnfY=
+golang.org/x/exp v0.0.0-20240613232115-7f521ea00fb8/go.mod h1:jj3sYF3dwk5D+ghuXyeI3r5MFf+NT2An6/9dOA95KSI=
