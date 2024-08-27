@@ -25,7 +25,7 @@ type PointsUpsert struct {
 }
 
 type Point struct {
-	ID      string                 `json:"id"`
+	ID      uint64                 `json:"id"`
 	Vector  []float32              `json:"vector"`
 	Payload map[string]interface{} `json:"payload,omitempty"`
 }

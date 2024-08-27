@@ -22,7 +22,7 @@ func main() {
 			Wait:           &wait,
 			Points: []request.Point{
 				{
-					ID:     "45b07125-f592-414f-a9d0-160c8ecc283a",
+					ID:     123456789,
 					Vector: []float32{1.1, 2.2, 3.3, 4.4},
 					Payload: map[string]interface{}{
 						"key": "value",
