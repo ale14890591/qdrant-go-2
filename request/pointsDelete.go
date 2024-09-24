@@ -14,7 +14,7 @@ type PointsDelete struct {
 	Ordering       *Ordering `json:"-"`
 	Wait           *bool     `json:"-"`
 	Filter         Filter    `json:"filter,omitempty"`
-	Points         []string  `json:"points,omitempty"`
+	Points         []uint64  `json:"points,omitempty"`
 }
 
 type M map[string]interface{}
